@@ -8,13 +8,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color:rgba(0,0,0,0.1); /* Dark background */
-  color: #000000; /* Light text */
+  color: #000000;
+  background: linear-gradient(180deg, #6a0f5f, #197480, #0e195c);
 }
 
+/* Sections take full width, only vertical padding */
 section {
-  padding: 100px 60px 60px;
+  padding: 100px 0 60px;  /* no left/right padding */
   min-height: 100vh;
+  width: 90%;
 }
 
 /* ===== Header ===== */
@@ -24,7 +26,7 @@ section {
   left: 0;
   width: 100%;
   height: 70px;
-  background: #1b0d4f; /* Darker nav */
+  background: #640a60; /* Darker nav */
   color: rgb(135, 140, 163);
   display: flex;
   justify-content: center;
@@ -58,28 +60,19 @@ nav ul li a:hover {
 
 /* ===== Landing Section ===== */
 .landing {
-  /* background-image: url("./wallpaper.jpg"); */
-  /* background-size: cover; */
-  /* background-position: center; 
-  background-attachment: fixed; */
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white; 
-  background-color: #0d0357;
+  color: #f8f5f5; 
+  width: 100%;
+  background: none;   /* ✅ remove background color/gradient */
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  display: none; /* ✅ disable overlay */
 }
 
 .landing-content {
@@ -91,7 +84,7 @@ nav ul li a:hover {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #1b0539; /* Accent border */
+  border: 2px solid #711458;
   margin-bottom: 20px;
 }
 
@@ -104,7 +97,7 @@ nav ul li a:hover {
 }
 
 .project-card {
-  background-color: rgb(133, 135, 164);
+  background-color: rgb(161, 163, 198);
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(31, 6, 79, 0.5);
   overflow: hidden;
@@ -138,7 +131,7 @@ nav ul li a:hover {
 }
 
 .view-btn {
-  background: #221e3d;
+  background:  #651062; 
   color: white;
   border: none;
   padding: 10px 16px;
@@ -156,7 +149,7 @@ nav ul li a:hover {
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
-  background: #9c89b1;
+  background: #11827a; 
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(42, 10, 91, 0.6);
@@ -172,7 +165,7 @@ nav ul li a:hover {
   display: block;
   margin-bottom: 6px;
   font-weight: 500;
-  color: #260775;
+  color: #0b227f;
 }
 
 .contact-form input,
@@ -194,7 +187,7 @@ nav ul li a:hover {
 
 .contact-form button {
   width: 160px;
-  background:#ae22ba;
+  background:#0e3c60;
   color: white;
   padding: 12px;
   border: none;
@@ -206,11 +199,11 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-  background: #cb37f0;
+  background: #8372b0;
   transform: scale(1.05);
 }
 .footer {
-  background: #1a001f;
+  background: #042534;
   color: #ddd;
   padding: 40px 20px;
   text-align: center;
@@ -226,7 +219,7 @@ nav ul li a:hover {
 }
 
 .footer-logo h2 {
-  color: #e531eb;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 

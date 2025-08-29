@@ -15,18 +15,19 @@ export default function Contact() {
   };
 
   return (
+    <div className="contact">
     <form className="contact-form" onSubmit={handleSubmit}>
       <h2>Contact Me</h2>
       <label>Name</label>
       <input name="name" value={form.name} onChange={handleChange} required />
-      
+
       <label>Email</label>
       <input type="email" name="email" value={form.email} onChange={handleChange} required />
-      
+
       <label>Message</label>
       <textarea name="message" value={form.message} onChange={handleChange} required />
-      
+
       <button type="submit">Send Message</button>
-    </form>
+    </form></div>
   );
 }
